@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href ="style.css" rel="stylesheet" media="all">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loch Ness Park</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Indie+Flower">
+    <div id="carousel"></div>
+<meta name="key6words" content="About Loch Ness Park:
+站長介紹，關於尼斯湖水怪公園，神祕生物的分類，購票區域，聯絡我們。">
+<meta name="description" content="關於尼斯湖水怪公園">
+</head>
+<style>
+    .lake_gif
+    {
+        border-radius: 10px;
+        transition: opacity 0.3s ease;
+        /*邊緣漸層*/
+        border: 5px solid #2b2b35;
+    }
+
+</style>
+<body>
+    <h1>Loch Ness Park <span class="material-icons">dark_mode</span></h1>
+    <div id="marquee-container">
+        <p id="marquee-text">歡迎菈臨! Loch Ness Park! 在行程開始前，請瀏覽官方網頁，獲取更多的資訊，讓您啟程一個美好的旅行~</p>
+    </div>
+
+    <nav>
+        <a href="ME.html">About Me</a>
+        <a href="Introduce.html">Introduce</a>
+        <a href="Type.html">Type</a>
+        <a href = "Area.html">Booking Area</a>
+        <a href = "Contact.html">Contact</a>
+    </nav>     
+
+    <section id="introduce">
+        <h2 class="center-text">Loch Ness Lake 🍀</h2>
+        <div class="center-gif">
+            <img src="gif/loch_ness_lake.gif" class="lake_gif" alt="Loch Ness Lake" width="480" height="270">
+        </div>
+        <div class="description center-text">
+            <p>尼斯湖是一個充滿神秘和謎團的地方，吸引了無數探險家和好奇者的到來。</p>
+            <p>據說，湖中隱藏著名為尼斯湖水怪的未知生物，有許多目擊報告和證據試圖證明它的存在。</p>
+            <p>從古老的傳說到現代的科學探索，尼斯湖始終是探尋未知、神秘和離奇現象的絕佳之地。</p>
+        </div>
+        <div class="buttons-container">
+            <button onclick="location.href='Facilities.html';" class="Facilities-button">About Leisure Facilities</button>
+        </div>
+    
+        
+        <h2 class="center-text monster-title">Loch Ness Monster 🦕</h2>
+        <div class="image-wrapper">
+            <div class="image-container">
+            <img src="photo/monster1.jpg" alt="尼斯湖水怪" width = "320" height = "350" alt = "Loch Ness Monster" >
+            <img src="photo/monster2.jpg" alt="尼斯湖水怪的懸停圖" width = "320" height = "350" >
+            </div>
+        </div>
+            <h3 class="center-text"><font color ="#00BBFF"><b>Hello, I'm Loch Ness Monster.</b></font></h3>
+            <p class="center-text"><br>作為尼斯湖的居民，我是這片湖水的守護者和傳奇的一部分。
+                <br><br>我被描述為一個巨大的生物，擁有長頸和身體，與史前的恐龍相似。
+                        我游動在湖水的深處，並時常露出我壯麗的背部和頸部。​
+                <br><br>我是這片湖泊獨特的一部分，代表著尼斯湖的歷史和文化遺產，為這片美麗的自然寶庫增添了一份神秘和傳奇的色彩。
+                <br><br>如果你有幸在尼斯湖遊覽時遇到我，別忘了保持好奇和尊重。我希望能為你們帶來一個難忘的經歷，並讓你們深深著迷於尼斯湖的美麗和我的存在。
+                <br><br>期待與你們在尼斯湖相遇！</p>
+        <div class="buttons-container">
+            <button onclick="location.href='Monster.html';" class="Me-button">About Me</button>
+        </div>
+    </section>    
+<p class="center-text"><a href= "Index.html" class="go_home">➤ Home </a></p>
+<p><small>Copyright&copy;UCHI NO NYAN's All Rights Reserved.</small></P>
+    <script>
+        function changeButtonColor(button) 
+        {
+            button.classList.add('button-clicked');
+        }
+    </script>
+</body>
+</html>

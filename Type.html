@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href ="style.css" rel="stylesheet" media="all">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loch Ness Park</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Indie+Flower">
+    <div id="carousel"></div>
+<meta name="key6words" content="About Loch Ness Park:
+站長介紹，關於尼斯湖水怪公園，神祕生物的分類，購票區域，聯絡我們。">
+<meta name="description" content="關於尼斯湖水怪公園">
+</head>
+<style>
+  .type-image 
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+	      margin-bottom: 30px; /* 調整這個值來增加圖片下方的間距 */
+        border-radius: 10px;
+    }
+  /* 容器使用 flexbox 來水平排列按鈕 */
+  .buttons-container 
+  {
+    display: flex;
+    justify-content: center; /* 使按鈕水平置中 */
+    align-items: center; /* 使按鈕垂直居中 */
+    margin-top: 20px;
+    max-width: 60%;
+    margin-left: auto; /* 左邊距自動 */
+    margin-right: auto; /* 右邊距自動 */
+  }
+
+/* 個別按鈕的共同樣式 */
+  .button-common 
+  {
+    background-color: #1e5f51; /* 按鈕背景顏色 */
+    border-radius: 25px; /* 圓角邊框 */
+    border: none;
+    color: white;
+    padding: 15px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease; /* 平滑過渡效果 */
+    margin: 0 10px; /* 按鈕之間的間隔 */
+    flex: 1; /* 允許按鈕伸縮，以填滿相同的空間 */
+    
+  }
+
+  /* 滑鼠懸停在按鈕上時的效果 */
+  .button-common:hover 
+  {
+    color: rgba(255, 252, 100, 0.877); /* 滑鼠懸停時的文字顏色 */
+    background-color: #0f3b2b; /* 滑鼠懸停時的背景顏色 */
+  }
+
+  /* 按鈕被點擊時的效果 */
+  .button-common:active 
+  {
+    transform: translateY(2px); /* 按鈕被點擊時輕微下移 */
+  }
+
+</style>
+
+<body>
+  <h1>Loch Ness Park <span class="material-icons">dark_mode</span></h1>
+  <div id="marquee-container">
+      <p id="marquee-text">歡迎菈臨! Loch Ness Park! 在行程開始前，請瀏覽官方網頁，獲取更多的資訊，讓您啟程一個美好的旅行~</p>
+  </div>
+
+  <nav>
+    <a href="ME.html">About Me</a>
+    <a href="Introduce.html">Introduce</a>
+    <a href="Type.html">Type</a>
+    <a href = "Area.html">Booking Area</a>
+    <a href = "Contact.html">Contact</a>
+</nav>         
+
+  <section class="Type">
+    <h2 class="center-text">✡ Mysterious Creature ✡</h2>
+    <img src="Image/type1.jpg" alt="Mysterious Creature" width = "320" height = "340" class="type-image">
+    <p class="type-text">
+      踏入尼斯湖畔，您已經進入了一個未知與奇蹟並存的世界。
+      <br>在這裡，神秘的面紗輕輕揭開，揭示了一系列令人迷惑的生物，它們或隱藏在深邃的湖水中，或徘徊在古老林間的陰影裡，甚至或在夜幕下翱翔於星辰之間。
+      <br><br>從深湖裡的湖怪「nessie」，據說是史前時代的遺跡，其神秘背影常在月光下留下短暫而令人驚異的剪影；
+      <br>到森林深處的妖精與小矮人，隨風低語，他們的存在是這片土地上數百年來傳說的見證；
+      <br>再到夜空中翔舞的飛行生物，或許是遠古天使的後裔，或是其他星球的使者，它們的身影在星光中閃爍，引領著我們向著未知深處探索。
+      <br>每一次耳語與目擊，每一次神祕的足跡和未解的謎語，都是對這片土地的愛和對未知的熱情的映射。這不只是一場尋找神祕生物的冒險，這是一次心靈的旅行，讓我們的想象飛翔，讓心靈在每一次的震撼與驚奇中得到滿足。
+      <br>因此，不要遲疑，穿上探險的裝備，攜帶著對未知的渴望和對神秘的尊重，一起來探尋這些離奇而迷人的生物，一起揭開尼斯湖及其周邊的神秘面紗。
+      <br><br>歡迎您，勇敢的旅人，開啟一段關於神祕生物的尋秘之旅。
+    </p>
+    <div class="buttons-container">
+      <button class="button-common" onclick="location.href='Aquatic.html';">Aquatic Organisms</button>
+      <button class="button-common" onclick="location.href='Terrestrial.html';">Terrestrial Organisms</button>
+      <button class="button-common" onclick="location.href='Flying.html';">Flying Organisms</button>
+    </div>
+    
+  </section>
+    
+<p class="center-text"><a href= "Index.html" class="go_home">➤ Home </a></p>
+<p><small>Copyright&copy;UCHI NO NYAN's All Rights Reserved.</small></P>
+</div>
+</body>
+</html>

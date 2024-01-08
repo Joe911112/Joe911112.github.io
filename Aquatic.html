@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href ="style.css" rel="stylesheet" media="all">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loch Ness Park</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Indie+Flower">
+    <div id="carousel"></div>
+<meta name="key6words" content="About Loch Ness Park:
+站長介紹，關於尼斯湖水怪公園，神祕生物的分類，購票區域，聯絡我們。">
+<meta name="description" content="關於尼斯湖水怪公園">
+</head>
+
+<style>
+/*Aquatic_img在section裡的左邊，Aquatic_little_title、Aquatic_p在Section的右邊*/
+.aquatic-section 
+{
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+.aquatic-img 
+{
+  width: 200px; /* 或者是您想要的尺寸 */
+  height: au; /* 保持圖片的比例 */
+  border-radius: 50%;
+}
+
+.text-content 
+{
+  width: 50%; /* 文本內容佔據剩餘的50%寬度 */
+  padding-left: 20px; /* 給文本內容一些間隙 */
+}
+
+.aquatic-little-title,
+.aquatic-p 
+{
+  /*字的顏色*/
+  color: white;
+  margin: 0; /* 移除默認的外邊距 */
+}
+
+/* 響應式設計，當屏幕尺寸較小時改變布局 */
+@media (max-width: 768px) 
+{
+  .aquatic-section 
+  {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aquatic-img 
+  {
+    width: 100%; /* 小屏幕時圖片全寬 */
+  }
+
+  .text-content 
+  {
+    width: 100%; /* 小屏幕時文本內容全寬 */
+    padding: 0; /* 移除間隙 */
+  }
+}
+
+.button4-container 
+{
+  text-align: center; /* 使內部的 inline-block 元素居中 */
+}
+
+.button4 
+{
+  display: inline-block;
+  border-radius: 25px; /* 圓角邊框 */
+  background-color: rgba(35, 172, 196, 0.877);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0; /* 移除外邊距來居中 */
+}
+
+.button4:hover 
+{
+  background-color: #1a64a1;
+}
+.button4:active
+{
+	transform: translateY(2px); /* 按下去時輕微下移 */
+}
+
+</style>
+
+<body>
+  <h1>Loch Ness Park <span class="material-icons">dark_mode</span></h1>
+  <div id="marquee-container">
+      <p id="marquee-text">歡迎菈臨! Loch Ness Park! 在行程開始前，請瀏覽官方網頁，獲取更多的資訊，讓您啟程一個美好的旅行~</p>
+  </div>
+
+  <nav>
+    <a href="ME.html">About Me</a>
+    <a href="Introduce.html">Introduce</a>
+    <a href="Type.html">Type</a>
+    <a href = "Area.html">Booking Area</a>
+    <a href = "Contact.html">Contact</a>
+</nav>  
+  <section id="Aquatic Organisms">
+    <h2 class="center-text">✧ Aquatic Organisms ✦</h2>
+    
+    <section class="aquatic-section">
+      <img class="aquatic-img" src="Image/a1.png" alt="水怪">
+      <div class="text-content">
+        <h3 class="aquatic-little-title">✎水怪</h3>
+        <p class="aquatic-p">
+          <br><br>尼斯湖水怪是尼斯湖最著名的神秘生物之一。據傳言，它是一種巨大的生物，擁有長頸和身體，類似於史前的恐龍。目擊者聲稱在湖中看到了它的背部或頭部隆起的畫面。
+        </p>
+      </div>
+    </section>
+
+    <section class="aquatic-section">
+      <img class="aquatic-img" src="Image/a2.jpg" alt="海妖">
+      <div class="text-content">
+        <h3 class="aquatic-little-title">✎海妖</h3>
+        <p class="aquatic-p">
+          <br><br>有人聲稱在尼斯湖看到了神秘的海妖，它擁有美麗的外表和水中生活的能力。雖然沒有具體的畫面描述，但人們對於這種生物的存在感到好奇。
+        </p>
+      </div>
+    </section>
+
+    <section class="aquatic-section">
+      <img class="aquatic-img" src="Image/a3.jpg" alt="美人魚">
+      <div class="text-content">
+        <h3 class="aquatic-little-title">✎美人魚</h3>
+        <p class="aquatic-p">
+          <br><br>關於尼斯湖美人魚的傳說也有所聞。根據目擊者的描述，它們是水中仙女般的生物，上半身是美麗的女性，下半身則是魚尾。有傳言稱尼斯湖中存在美人魚。在某些時刻，美人魚會浮出水面，並以歌聲吸引著附近的人們。
+        </p>
+      </div>
+    </section>
+
+    <section class="aquatic-section">
+      <img class="aquatic-img" src="Image/a4.jpg" alt="怪誕蟲">
+      <div class="text-content">
+        <h3 class="aquatic-little-title">✎怪誕蟲</h3>
+        <p class="aquatic-p">
+          <br><br>尼斯湖地區也有一些傳說中的怪誕蟲，據報導它們外形奇特，可能具有超出常規的特徵。然而，關於這些怪誕蟲的具體畫面並不明確。
+        </p>
+      </div>
+    </section>
+    <section class="button4-container">
+      <button onclick="location.href='More01.html';" class="button4">More Information</button>
+    </section>
+    <p class="center-text"><a href="Index.html" class="go_home">➤ Home </a></p>
+    
+  </section>
+
+<p><small>Copyright&copy;UCHI NO NYAN's All Rights Reserved.</small></P>
+</div>
+</body>
+</html>

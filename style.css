@@ -1,0 +1,693 @@
+@charset "utf-8";
+
+
+/*視窗底色設定*/
+body
+{
+	background-color: rgba(37, 39, 43, 0.9);
+	/*
+	background-size: cover;
+	background-repeat: no-repeat; /*平舖*/ 
+	font-family: 'Times New Roman', Times, serif, sans-serif;
+  	color: #6c757d; 
+  	
+}
+
+#marquee-container 
+{
+    margin-top: 20px; 
+}
+nav 
+{
+	text-align: center; /* 將標籤列水平置中 */
+    padding: 10px; /* 調整內容與邊框的間距 */
+	margin-bottom: 100px;/*間距*/
+}
+nav a 
+{
+    text-decoration: none; /* 去除連結的下劃線 */
+    margin: 0 10px; /* 調整標籤之間的間距 */
+}
+#wrap
+{
+	width: 798px;
+	margin: 40px auto;
+	padding: 40px 80px;/*上下左右*/
+	border: #aa72bb 1px solid;/*上右下左*/
+	background-color: #fff;
+}
+
+#rule01_rule02
+{
+	border: #dee042 2px solid;/*上右下左*/
+}
+
+/*連結顏色設定*/
+a
+{
+	color:#e39bf5;
+}
+
+a:visited
+{
+	color:rgb(255, 253, 158);
+}
+
+a:hover
+{
+	color:#c90cbf;
+}
+
+/*頁面標題設定*/
+@font-face 
+{
+	font-family: 'CustomFont'; /* 為字體定義一個名字 */
+	src: url('MetalMania-Regular.ttf') format('truetype'); /* 指定字體文件的位置 */
+}
+@font-face 
+{
+	font-family:'CustomFont01';
+	src: url('KaushanScript-Regular.ttf') format('truetype');
+}
+@font-face 
+{
+	font-family:'CustomFont02';
+	src: url('Pangolin-Regular.ttf') format('truetype');
+}
+
+nav
+{
+	font-family: 'CustomFont01', sans-serif;
+}
+
+h1
+{
+    font-family: 'CustomFont', sans-serif; /* 應用字體 */
+	color:#6c36c4;
+	text-align:center;
+	font-size:250%;
+	text-shadow: 0 0 7px rgba(255, 255, 255, 0.904);
+}
+
+h1 span
+{
+	color:#d0e35b;
+}
+/*.go_home 超連結不要下底線*/
+.go_home
+{
+    text-decoration:none;
+}
+
+/*次標題設定*/
+h2
+{
+	color:#ca8dec;
+	border:#dee042 1px dotted;
+	border-left:#fff024 10px solid;
+	border-right:#fff024 10px solid;
+	padding:5px 20px;
+	margin-bottom:0;
+    font-family: 'CustomFont02', sans-serif;
+}
+
+.center-text
+{
+    text-align: center;
+	margin: auto;
+    /*調整字的間距*/
+    letter-spacing: 0.2em;
+    margin-top: 30px;
+}
+
+.center-text.monster-title 
+{
+    margin-bottom: 30px; /* 或者您想要的間距大小 */
+}
+
+.center-image 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+	margin-bottom: 30px; /* 調整這個值來增加圖片下方的間距 */
+}
+.center-gif 
+{
+	display: flex;
+	justify-content: center; /* 水平置中 */
+  	align-items: center; /* 垂直置中 */
+	height: 40vh; 
+}
+
+.image-wrapper 
+{
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    height: 40vh; /* 可以是任何值，根据您的需要设置 */
+}
+
+.image-container 
+{
+    position: relative;
+    width: 320px; /* 根据您的图片宽度设置 */
+    height: 350px; /* 根据您的图片高度设置 */
+    overflow: hidden;
+}
+
+.image-container img 
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: auto; /* 如果您想保持图像的宽高比，使用 auto */
+    height: 100%;
+    transform: translate(-50%, -50%); /* 保证图片中心与容器中心对齐 */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-container img:first-child 
+{
+    opacity: 1;
+}
+
+.image-container img:last-child 
+{
+    opacity: 0;
+}
+
+.image-container:hover img:first-child 
+{
+    opacity: 0;
+}
+
+.image-container:hover img:last-child 
+{
+    opacity: 1;
+}
+
+.image-left 
+{
+    float: left; /* 讓圖片浮動到左邊 */
+    margin-right: 20px; /* 圖片右邊的間距 */
+    max-width: 320px; /* 最大寬度限制 */
+    height: auto;
+    border-radius: 4px;
+}
+
+.reflection 
+{
+    -webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(rgba(255, 255, 255, 0.3)));
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* 添加一個清除浮動的類別 */
+.clearfix::after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* 其他樣式保持不變 */
+
+.leisure-item 
+{
+    margin-bottom: 30px; /* 增加底部間距，您可以根據需要調整這個值 */
+    color: white; /* 設置文字顏色為白色 */
+}
+
+/* 針對標題設置白色 */
+.leisure-item h3 
+{
+    color: white;
+}
+
+/* 為描述文字添加樣式 */
+.description 
+{
+    color: white;
+    text-align: center; /* 確保文本水平居中 */
+    margin: auto; /* 適當的間距 */
+    padding: 20px 0; /* 添加一些內邊距 */
+}
+
+/* 為描述文字添加樣式 */
+.Leisure_Facilities
+{
+    color: white;
+	max-width: 60%; /* 限制描述文字的最大寬度 */
+    /* 如果您需要，可以在這裡添加更多樣式 */
+}
+
+.News-item 
+{
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* 添加下邊距 */
+    max-width: 60%;
+}
+
+/* 確保圖片和文字描述在大屏幕上水平排列 */
+@media screen and (min-width: 768px) 
+{
+    .Newsimage-left, .News 
+    {
+        display: inline-block;
+        vertical-align: top; /* 確保頂部對齊 */
+    }
+}
+
+/* 較小屏幕的調整 */
+@media screen and (max-width: 768px) 
+{
+    .Newsimage-left, .News 
+    {
+        display: block;
+        width: 100%;
+    }
+    .Newsimage-left img 
+    {
+        display: block;
+        margin: 0 auto; /* 圖片居中 */
+    }
+}
+
+.Newsimage-left
+{
+    float: left; /* 讓圖片浮動到左邊 */
+    /*圖片陰影*/
+    box-shadow: 0 0px 20px black;
+    margin-right: 20px; /* 圖片右邊的間距 */
+    max-width: 320px; /* 最大寬度限制 */
+    width: 350px; /* 限制最大寬度 */
+    height: 350px; /* 限制最大高度 */
+    border-radius: 4px;
+}
+
+.type-text
+{
+    max-width:auto;
+    text-align: center;
+}
+
+/*內容標題設定*/
+p
+{
+	color:#fafafa
+}
+dt
+{
+	color:#ffffff;
+	font-weight:bold;
+}
+dd
+{
+	color:#ffffff;
+}
+li
+{
+	color:#ffffff;
+}
+
+table
+{
+	color:#ffffff;
+}
+/*引言區塊設定*/
+#lead
+{
+	border-top:#274438 1px dotted;
+	border-bottom:#6fbb9a 1px dotted;
+	padding:15px;
+	text-align:center;
+}
+
+/*照片及特徵區塊設定*/
+.ph
+{
+	float: left;
+	margin-right: 30px;
+}
+
+.data
+{
+	float: left;
+	width: 388px;
+}
+
+/*「更多介紹」連結設定*/
+.more
+{
+	text-align:right;
+	/*
+	background-image:url(img/icon-arw01.png);
+	background-repeat:no-repeat;
+	background-position:right center;
+	*/
+	background:url(img/icon-arw01.png) no-repeat right center;
+	padding-right:15px;
+	clear: left;
+}
+
+/*花色、性別（共通資料）*/
+.cat-type
+{
+	font-size:80%;
+	font-weight:normal;
+}
+
+/*依性別區分顏色*/
+.cat-type.male
+{
+	color:#2793a7;
+}
+
+.cat-type.female
+{
+	color:#df972f;
+}
+
+/*區塊邊界設定*/
+.frame
+{
+	margin:20px 0;
+	padding:35px 30px 30px 30px;
+	/*
+	background-image:url(img/bg-stripe02.png) ;
+	background-repeat:repeat-x;
+	background-color:#fbf9cc;
+	*/
+	background:url(img/bg-stripe02.png) repeat-x #fbf9cc;
+}
+
+#marquee-container 
+{
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    border: 2px solid #FFFFAA;
+    border-radius: 10px;
+}
+
+#marquee-text 
+{
+    font-family: "Indie Flower", sans-serif;
+    font-size: 16px;
+    color: #D3A4FF;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee 
+{
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+table /*表格設定*/
+{
+    width: 50%;
+    border-collapse: collapse;
+	margin: auto; 
+    display: block;
+}
+th, td 
+{
+    
+	border: none;
+    padding: 8px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);  /* 文字陰影 */
+}
+th 
+{
+    background-color: transparent;
+}
+
+.button-container 
+{
+	text-align: center;  /* 將按鈕置中 */
+}
+/* 按鈕基本樣式 */
+.button 
+{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 25px; /* 圓角邊框 */
+    background-color: rgba(255, 252, 100, 0.877); /* 半透明月光黃 */
+    color: rgb(135, 66, 184); /* 紫字體顏色 */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* 過渡效果 */
+    cursor: pointer;
+}
+
+/* 滑鼠懸停效果 */
+.button:hover 
+{
+    background-color: rgba(255, 214, 49, 0.877); /* 深黃色，但不太深 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加陰影 */
+}
+
+/* 按鈕點擊效果 */
+.button:active,.Facilities-button:active,.Me-button:active 
+{
+	transform: translateY(2px); /* 按下去時輕微下移 */
+}
+
+/* 按鈕點擊後的樣式 */
+.button-clicked 
+{
+    background-color: #e05aa4; 
+    color: #fff; 
+    
+}
+.button-container 
+{
+    text-align: center;
+    margin: 20px 0; /* 調整按鈕上下的間距 */
+}
+/*.Facilities-button*/
+.Facilities-button 
+{
+    padding: 10px 20px;
+    margin: 10px; /* 按鈕之間的間距 */
+    border: none;
+    border-radius: 5px; /* 輕微的圓角邊框 */
+    background-color:#1d54a5; /* 深藍色背景 */
+    color: #FFD700; /* 黃色文字 */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* 平滑過渡效果 */
+    margin: 0 10px; /* 確保按鈕之間有空間 */
+}
+.Facilities-button:hover 
+{
+    background-color: #13a4d8e5; /* 變為淺藍色，但不要太淺 */
+}
+
+.Me-button
+{
+    padding: 10px 20px;
+    margin: 10px; /* 按鈕之間的間距 */
+    border: none;
+    border-radius: 5px; /* 輕微的圓角邊框 */
+    background-color:#1d54a5; /* 深藍色背景 */
+    color: #FFD700; /* 黃色文字 */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* 平滑過渡效果 */
+    margin: 0 10px; /* 確保按鈕之間有空間 */
+}
+
+/* 滑鼠滑過按鈕時的效果 */
+.buttons-container 
+{
+    display: flex;
+    justify-content: space-around; /* 在按鈕之間提供平均的空間 */
+    align-items: center; /* 垂直居中 */
+    padding: 20px 0; /* 上下間距 */
+}
+
+
+/* 滑鼠懸停效果 */
+.Me-button:hover 
+{
+    background-color: #13a4d8e5; /* 變為淺藍色，但不要太淺 */
+}
+
+/* 這裡將特定於Old Castle的h2樣式從全局h2樣式中分離出來 */
+#Old-Castle h2.center-text 
+{
+    color: #ca8dec;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'CustomFont02', sans-serif;
+}
+
+/* 圓形圖片的樣式 */
+.round-image 
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.round-image img 
+{
+    border-radius: 50%;
+    width: 300px; /* 設定圖片大小 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 文章段落的樣式 */
+p, li {
+    color: #fafafa;
+}
+
+.gallery-container 
+{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 80%;
+    height: 350px;
+    margin: 40px auto;
+    position: relative;
+}
+
+#gallery-image 
+{
+    width: 0%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: 20px; /* 調整右側邊距 */
+}
+
+.description-and-indicators 
+{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.description-container 
+{
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.indicator-container 
+{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.indicator 
+{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.indicator.active 
+{
+    background-color: #333;
+    width: 12px;
+    height: 12px;
+    box-shadow: 0 0 0 2px white;
+    transform: scale(1.25);
+}
+
+.gallery-button 
+{
+    background-color: #444;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.gallery-button.previous 
+{
+    left: -50px; /* 左側按鈕位置 */
+}
+
+.gallery-button.nex 
+{
+    right: -50px; /* 右側按鈕位置 */
+}
+
+@media (max-width: 768px) 
+{
+    .gallery-container 
+    {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #gallery-image 
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .description-and-indicators 
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+    .gallery-button 
+    {
+        position: static;
+        margin: 10px 0;
+        transform: none;
+    }
+
+    .indicator-container 
+    {
+        position: static;
+        margin-top: 20px;
+        transform: none;
+    }
+}
+
+
+
+
+

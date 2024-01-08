@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href ="style.css" rel="stylesheet" media="all">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loch Ness Park</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Indie+Flower">
+    <div id="carousel"></div>
+<meta name="key6words" content="About Loch Ness Park:
+站長介紹，關於尼斯湖水怪公園，神祕生物的分類，購票區域，聯絡我們。">
+<meta name="description" content="關於尼斯湖水怪公園">
+</head>
+
+<style>
+/*Aquatic_img在section裡的左邊，Aquatic_little_title、Aquatic_p在Section的右邊*/
+.aquatic-section 
+{
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+.aquatic2-img 
+{
+  width: 200px; /* 或者是您想要的尺寸 */
+  height: 250px; /* 保持圖片的比例 */
+  border-radius: 20%;
+}
+
+.text-content 
+{
+  width: 50%; /* 文本內容佔據剩餘的50%寬度 */
+  padding-left: 20px; /* 給文本內容一些間隙 */
+}
+
+.aquatic-little-title,
+.aquatic-p 
+{
+  /*字的顏色*/
+  color: white;
+  margin: 0; /* 移除默認的外邊距 */
+}
+
+/* 響應式設計，當屏幕尺寸較小時改變布局 */
+@media (max-width: 768px) 
+{
+  .aquatic-section 
+  {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aquatic2-img 
+  {
+    width: 100%; /* 小屏幕時圖片全寬 */
+  }
+
+  .text-content 
+  {
+    width: 100%; /* 小屏幕時文本內容全寬 */
+    padding: 0; /* 移除間隙 */
+  }
+}
+
+.button4-container 
+{
+  text-align: center; /* 使內部的 inline-block 元素居中 */
+}
+
+.button4 
+{
+  display: inline-block;
+  border-radius: 25px; /* 圓角邊框 */
+  background-color: rgba(35, 172, 196, 0.877);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0; /* 移除外邊距來居中 */
+}
+
+.button4:hover 
+{
+  background-color: #1a64a1;
+}
+.button4:active
+{
+	transform: translateY(2px); /* 按下去時輕微下移 */
+}
+
+</style>
+
+<body>
+  <h1>Loch Ness Park <span class="material-icons">dark_mode</span></h1>
+  <div id="marquee-container">
+      <p id="marquee-text">歡迎菈臨! Loch Ness Park! 在行程開始前，請瀏覽官方網頁，獲取更多的資訊，讓您啟程一個美好的旅行~</p>
+  </div>
+
+  <nav>
+    <a href="ME.html">About Me</a>
+    <a href="Introduce.html">Introduce</a>
+    <a href="Type.html">Type</a>
+    <a href = "Area.html">Booking Area</a>
+    <a href = "Contact.html">Contact</a>
+</nav>  
+  <section id="Aquatic Organisms">
+    <h2 class="center-text">✧ Aquatic Organisms ✦</h2>
+    
+    <section class="aquatic-section">
+      <img class="aquatic2-img" src="Image/a5.jpg" alt="水怪">
+      <div class="text-content">
+        <h3 class="aquatic-little-title">✎水怪</h3>
+        <p class="aquatic-p">
+          <br>行為與習性：
+          <br>尼斯湖水怪，通常被稱為“尼斯”，是一種悠游於湖水深處的生物，據說非常害羞，很少露面。它偏愛安靜的水域，避開喧嘩和繁忙的遊船路線。它通常在清晨或黃昏時分出現，尋找食物或是在水面上享受寧靜的時刻。
+          <br><br>經常出沒的地點：
+          <br>尼斯主要在尼斯湖的深水區域出沒，特別是湖中未被探索過的深處，以及湖邊的蘆葦叢中，這些地方通常游客較少，更適合它隱蔽的生活方式。
+        </p>
+      </div>
+    </section>
+
+    <section class="aquatic-section">
+      <img class="aquatic2-img" src="Image/a6.jpg" alt="海妖">
+      <div class="text-content">
+        <h3 class="aquatic-little-title">✎海妖</h3>
+        <p class="aquatic-p">
+          <br>行為與習性：
+          <br>海妖以其迷人的外表和歌聲聞名，她喜愛在滿月之夜在湖面上跳舞和唱歌。她會用美妙的旋律吸引旅人，但同時也會幫助迷路的漁夫找到回家的路。
+          <br><br>經常出沒的地點：
+          <br>常在湖的北岸出沒，那裡有許多隱蔽的小灣和岩石，是她優美歌聲的最佳舞台。
+        </p>
+      </div>
+    </section>
+
+    <section class="aquatic-section">
+      <img class="aquatic2-img" src="Image/a7.jpg" alt="美人魚">
+      <div class="text-content">
+        <h3 class="aquatic-little-title">✎美人魚</h3>
+        <p class="aquatic-p">
+          <br>行為與習性：
+          <br>湖面下以神秘莫測的姿態遊弋，她僅在月光映照湖面時以其迷人的旋律吟唱，喚醒沉睡的生物，並導引迷路的水手。
+          <br><br>經常出沒的地點：
+          <br>尼斯湖中那些未被探索的深處，尤其是那些在夜色中閃爍著微光的隱秘水草之間。
+        </p>
+      </div>
+    </section>
+
+    <section class="aquatic-section">
+      <img class="aquatic2-img" src="Image/a8.jpg" alt="怪誕蟲">
+      <div class="text-content">
+        <h3 class="aquatic-little-title">✎怪誕蟲</h3>
+        <p class="aquatic-p">
+          <br>行為與習性：
+          <br>是一種神秘且未知的生物，它的行為模式變化多端，有時會好奇地接近遊客，有時則會潛伏在水下靜靜觀察。它似乎對尼斯湖的生態系統有著重要的影響。
+          <br><br>經常出沒的地點：
+          <br>偏好於湖中偏遠和不為人知的角落，特別是湖底的洞穴和沉船周圍。
+        </p>
+      </div>
+    </section>
+    <section class="button4-container">
+      <button onclick="location.href='Aquatic.html';" class="button4">Back</button>
+    </section>
+    <p class="center-text"><a href="Index.html" class="go_home">➤ Home </a></p>
+    
+  </section>
+
+<p><small>Copyright&copy;UCHI NO NYAN's All Rights Reserved.</small></P>
+</div>
+</body>
+</html>
